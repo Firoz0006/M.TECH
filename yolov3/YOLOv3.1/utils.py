@@ -346,7 +346,7 @@ def cells_to_bboxes(predictions, anchors, S, is_preds=True):
     is_preds: whether the input is predictions or the true bounding boxes
     OUTPUT:
     converted_bboxes: the converted boxes of sizes (N, num_anchors, S, S, 1+5) with class index,
-                      object score, bounding box coordinates
+                    object score, bounding box coordinates
     """
     BATCH_SIZE = predictions.shape[0]
     num_anchors = len(anchors)
